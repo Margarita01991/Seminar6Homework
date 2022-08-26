@@ -9,7 +9,7 @@ Console.WriteLine("введите значение b2");
 double b2 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("введите значение k2");
 double k2 = Convert.ToInt32(Console.ReadLine());
-//(y=) k1x + b1 = k2x + b2; k1x - k2x = b2 - b1;
+//(y=) k1x + b1 = k2x + b2; k1x - k2x = b2 - b1; (k1 - k2)x = (b2 - b1)
 double x = (b2 - b1)/(k1 - k2);
 double y = k2 * x + b2;
 
