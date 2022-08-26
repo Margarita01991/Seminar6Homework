@@ -1,6 +1,6 @@
 ﻿/* Пользователь вводит с клавиатуры M чисел. Посчитайте, сколько чисел больше 0 ввёл пользователь.
 0, 7, 8, -2, -2 -> 2
-1, -7, 567, 89, 223-> 3    */
+1, -7, 567, 89, 223-> 3    */ 
 Console.Clear();
 int[] FillArray(int size, int leftRange, int rightRange)
 {
@@ -12,7 +12,6 @@ int[] FillArray(int size, int leftRange, int rightRange)
     }
     return arr;
 }
-
 int[] array = FillArray (8,-100, 100);
 Console.WriteLine('['+ string.Join(", ", array) + ']');
 int count = 0;
@@ -23,4 +22,4 @@ for(int i = 0; i <array.Length; i++)
         count++;
     }
 }
-Console.WriteLine(count);
+Console.WriteLine($"{count} числа больше 0");
