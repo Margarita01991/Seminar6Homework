@@ -5,11 +5,8 @@ int N = Convert.ToInt32(Console.ReadLine());
 int[] array = new int[N];
 array[0] = 0;
 array[1] = 1;
-Console.WriteLine(0);
-Console.WriteLine(1);
-for (int i = 2; i <= N; i++)
+for (int i = 2; i < N; i++)
 {
     array[i] = array[i-1] + array[i-2];
-
-    Console.WriteLine(array[i]);
 }
+Console.WriteLine(string.Join(" ", array));
